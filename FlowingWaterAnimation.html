@@ -5,15 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flowing Water Background</title>
 <style>
-/* Base styles */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
 }
-
-/* Background water effect container */
 .water-flow {
     position: relative;
     width: 100%;
@@ -21,8 +18,6 @@ body, html {
     background: linear-gradient(45deg, #0099cc, #33ccff);
     overflow: hidden;
 }
-
-/* Water waves animation */
 .wave {
     position: absolute;
     width: 200%;
@@ -32,8 +27,6 @@ body, html {
     border-radius: 100%;
     animation: moveWave 8s linear infinite;
 }
-
-/* Position waves at different heights for a layered look */
 .wave:nth-child(1) {
     top: 20%;
     left: -50%;
@@ -49,8 +42,6 @@ body, html {
     left: -70%;
     animation-delay: 4s;
 }
-
-/* Keyframes for moving waves */
 @keyframes moveWave {
     0% {
     transform: translateX(0) translateY(0);
@@ -59,8 +50,6 @@ body, html {
     transform: translateX(100%) translateY(20px);
     }
 }
-
-/* Optional gradient overlay for a smoother water look */
 .gradient-overlay {
     position: absolute;
     top: 0;
@@ -70,20 +59,14 @@ body, html {
     background: linear-gradient(to top, rgba(0, 51, 102, 0.7), rgba(51, 153, 204, 0.7));
     z-index: 10;
 }
-
 </style>
 </head>
 <body>
-
 <div class="water-flow">
-<!-- Waves moving -->
 <div class="wave"></div>
 <div class="wave"></div>
 <div class="wave"></div>
-
-<!-- Optional overlay for a better water effect -->
 <div class="gradient-overlay"></div>
 </div>
-
 </body>
 </html>
